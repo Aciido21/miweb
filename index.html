@@ -12,11 +12,14 @@
     header { background:#0077cc; color:#fff; padding:10px;}
     nav a { color:#fff; margin:0 10px; text-decoration:none; }
     nav a:hover { text-decoration:underline; }
-    main { padding:20px; max-width:800px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+    main { padding:20px; max-width:900px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
     h1,h2 { color:#0077cc; }
     .ads { margin:20px 0; text-align:center; }
-    ul { list-style-type:none; padding-left:0; }
-    ul li { margin-bottom:10px; }
+    .articles { display:flex; flex-direction:column; gap:20px; }
+    .article-card { border:1px solid #ddd; border-radius:8px; padding:10px; display:flex; flex-direction:column; background:#fefefe; }
+    .article-card img { max-width:100%; height:auto; border-radius:5px; margin-bottom:10px; }
+    .article-card a { font-weight:bold; color:#0077cc; text-decoration:none; }
+    .article-card a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
@@ -32,7 +35,7 @@
 
   <main>
     <h1>Bienvenido a Mi Sitio Web</h1>
-    <p>Este sitio web está optimizado para Google AdSense y ofrece contenido original y de calidad. Explora nuestros artículos en el blog y aprende cosas nuevas cada día.</p>
+    <p>Explora nuestros artículos y aprende cosas nuevas cada día. Sitio optimizado para Google AdSense.</p>
 
     <div class="ads">
       <ins class="adsbygoogle"
@@ -40,17 +43,28 @@
            data-ad-client="ca-pub-9355315843724012"
            data-ad-slot="pub-9355315843724012"
            data-ad-format="auto"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <h2>Últimos artículos</h2>
-    <ul>
-      <li><a href="blog.html#articulo1">5 curiosidades sobre la tecnología</a></li>
-      <li><a href="blog.html#articulo2">Cómo organizar tu tiempo y ser más productivo</a></li>
-      <li><a href="blog.html#articulo3">Beneficios de aprender algo nuevo cada día</a></li>
-    </ul>
+    <div class="articles">
+
+      <div class="article-card">
+        <img src="img/tecnologia.jpg" alt="Tecnología">
+        <a href="blog.html#articulo1">5 curiosidades sobre la tecnología</a>
+      </div>
+
+      <div class="article-card">
+        <img src="img/productividad.jpg" alt="Productividad">
+        <a href="blog.html#articulo2">Cómo organizar tu tiempo y ser más productivo</a>
+      </div>
+
+      <div class="article-card">
+        <img src="img/aprendizaje.jpg" alt="Aprendizaje">
+        <a href="blog.html#articulo3">Beneficios de aprender algo nuevo cada día</a>
+      </div>
+
+    </div>
 
     <div class="ads">
       <ins class="adsbygoogle"
@@ -58,9 +72,7 @@
            data-ad-client="ca-pub-9355315843724012"
            data-ad-slot="pub-9355315843724012"
            data-ad-format="auto"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
   </main>
 </body>
